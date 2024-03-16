@@ -12,7 +12,7 @@
 start(_StartType, _StartArgs) ->
     Dispatch = cowboy_router:compile([
 	    {'_', [
-		%{"/", cowboy_static, {priv_file, db_access, "static/index.html"}},
+		%{"/", cowboy_static, {priv_file, junk_hello, "static/index.html"}},
 	        {"/", default_page_h, []}
 
 	    ]}
